@@ -1,0 +1,120 @@
+\documentclass[10pt,a4paper]{article}
+
+% full page rendering for the other pages
+\usepackage[cm]{fullpage}
+
+% color package
+\usepackage[usenames]{color}
+\usepackage{listings}
+\lstset{basicstyle=\scriptsize}
+
+% dark blue for urls
+\definecolor{urlcolor}{rgb}{0,0.08,0.45} 
+
+\usepackage{natbib}
+
+% Harvard style citations
+\bibliographystyle{agsm}
+
+\usepackage{bibunits}
+
+% make bibtex not print a Heading
+\renewcommand{\bibsection}
+
+% no numbered titles
+%\setcounter{secnumdepth}{-1}
+
+\usepackage{url}
+
+\newcommand{\linkfull}[2]{"\color{urlcolor}{\underline{\url{#2}}}"\footnote{"{#1}" - \footurl{#2} }}
+% \link{Title}{url}
+% Inline:	"Title"
+% Footnote:	"Title" - url
+\newcommand{\link}[2]{{#1}\footnote{{#1} - \footurl{#2} }}
+% \url{url}
+% Blue color, with underline.
+\newcommand{\footurl}[1]{\color{urlcolor}{\underline{\url{#1}}}}
+
+%%% Document
+\begin{document}
+
+%%%% TitlePage
+\begin{titlepage}
+ 
+% Everything centered.
+% \begin{center}
+
+\textsc{\LARGE{COMP3020 Part III Project Proposal}}\\[0.0cm]
+
+\large{Project Title: *Your Project Title*}
+
+\large{Author: *Your Name* (*your-id*@ecs.soton.ac.uk)}
+
+\large{Project Supervisor: *Dr. Your Sup* (*sup-id*@ecs.soton.ac.uk)}
+
+\section{Description}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Problem}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Goal}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Scope}
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+% \end{center}
+ 
+\end{titlepage}
+%%%% End Titlepage
+
+%%%% Acknowledgements
+% \section{Acknowledgements}
+
+% \newpage
+%%%% End Acknowledgements
+
+%%%% Contents Page
+% \tableofcontents
+% \newpage
+%%%% End Contents Page
+
+%%%% Abstract
+% \section{Abstract}
+
+% \newpage
+%%%% End Abstract
+ 
+ 
+%%%% Introduction
+% \section{Introduction}
+
+% \newpage
+%%%% End Introduction
+
+%%%% References
+% \section{References}
+%\bibliography{myrefs}
+% \newpage
+%%%% End References
+
+%% Comment, then compile, then uncomment, then compile, then comment then compile then uncomment.
+
+%%%% Bibliography
+% \section{Bibliography}
+% \begin{bibunit}[agsm]
+% \nocite{1359484,1080875,Standage:2008rz}
+% \putbib[myrefs]
+% \end{bibunit}
+
+% \newpage
+%%%% End Bibliography
+
+\end{document}

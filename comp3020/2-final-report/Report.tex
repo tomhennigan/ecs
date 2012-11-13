@@ -1,0 +1,42 @@
+
+
+% Include the styling.
+\include{Style}
+
+%%% Document
+\begin{document}
+	% Pages before the chapters will be numbered with roman numerals i,ii ...
+	\pagenumbering{roman}
+	
+	\include{TitlePage}
+	\include{Abstract}
+	
+	% Now add the fancy title ontop of the pages.
+	\pagestyle{fancy}
+	
+	% Auto generated ToC
+	\tableofcontents
+	
+	% Put headers on the pages.
+	\include{Acknowledgments}
+	
+	% Page numbering back to 1,2,3... this resets the page count to 1.
+	\pagenumbering{arabic}
+	
+	% These chapters are just examples.
+	% Copy Chapter_TEMPLATE for your own chapters.
+	\include{Chapter_Introduction/Chapter_Introduction}
+	\include{Chapter_Approaches/Chapter_Approaches}
+	\include{Chapter_FinalApproach/Chapter_FinalApproach}
+	
+	% Chapters specific to the project should be put in here.
+	\include{Chapter_TEMPLATE/Chapter_TEMPLATE}
+	
+	
+	\include{Chapter_Conclusion/Chapter_Conclusion}
+	
+	\include{References}
+	
+	\input{Appendices}
+
+\end{document}

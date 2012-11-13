@@ -1,0 +1,15 @@
+
+% Glossary entries for use within the document.
+% http://en.wikibooks.org/wiki/LaTeX/Glossary
+% Glossary entries must be referenced before they are used.
+
+% See Justification.tex for example usage.
+
+% The acronyms listed are not put down as references. An acronym can contain text
+% From a glossary entry, but the latex/makeglossaries pair in Makefile need to be run TWICE
+% Acronyms can be used the same as a glossary entry via \gls{acronym-key}
+\newacronym{acronym}{ACRONYM}{Abbreviated Coded Rendition Of Name Yielding Meaning}
+
+% Glossary entries are put into the glossary as long as they are cited using \gls{key} \Gls{key} or \GLS{key} (the variations just affect the capitolisation of the name printed at the point of reference.)
+\newglossaryentry{example}{name=example, description={Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}}
+
